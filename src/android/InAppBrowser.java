@@ -1380,7 +1380,7 @@ public class InAppBrowser extends CordovaPlugin {
                 // Assume that everything is HTTP at this point, because if we don't specify,
                 // it really should be.  Complain loudly about this!!!
                 LOG.e(LOG_TAG, "Possible Uncaught/Unknown URI");
-                newloc = "http://" + url;
+                newloc = url;
             }
 
             // Update the UI if we haven't already
